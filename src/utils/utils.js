@@ -1,18 +1,18 @@
 export const LINKS_HEADER = [
     {
-        href:"/",
+        to: "/home",
         name: "Accounts"
     },
     {
-        href:"/",
+        to: "/cards",
         name: "Cards"
     },
     {
-        href:"/",
+        to: "/loans",
         name: "Loans"
     },
     {
-        href:"/",
+        to: "/transactions",
         name: "Transactions"
     },
-]
+];

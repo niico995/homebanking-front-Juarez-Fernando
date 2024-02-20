@@ -9,7 +9,7 @@ const Header = () => {
             <nav>
                 {
                     LINKS_HEADER.map((link, index) => {
-                        return (<Anchor key={index} href={link.href} content={link.name}></Anchor>)
+                        return (<Anchor key={index} to={link.to} content={link.name}></Anchor>)
                     })   
                 }
             </nav>

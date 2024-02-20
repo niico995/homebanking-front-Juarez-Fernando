@@ -170,3 +170,121 @@ nav {
   color: white;
   font-size: 8px;
 }
+
+.activeLoansTitle {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+  filter: drop-shadow(2px 4px 10px rgba(13, 33, 212, 0.815));
+}
+
+.loansList div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid black;
+}
+
+.loansContainer {
+  background-color: rgba(106, 146, 233, 0.664);
+  height: 400px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+}
+.loansContainer p {
+  border-bottom: 1px solid black;
+  font-size: 14px;
+}
+.loansContainer select, input {
+  width: 200px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+}
+
+.reqAcc {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.newAccContainer {
+  width: 350px;
+  background-color: rgba(133, 133, 133, 0.171);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  align-items: center;
+}
+.newAccContainer h4 {
+  text-align: center;
+}
+.newAccContainer input {
+  text-align: center;
+}
+.newAccContainer div {
+  background-color: blue;
+  border-radius: 5px;
+  height: 30px;
+  width: 70px;
+  padding: 6px 8px;
+}
+
+.newCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 25px;
+}
+
+.newCardForm {
+  width: 350px;
+  background-color: rgba(133, 133, 133, 0.171);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  align-items: center;
+}
+
+.newCardForm div {
+  background-color: blue;
+  border-radius: 5px;
+  height: 30px;
+  width: 70px;
+  padding: 6px 8px;
+}
+.button {
+  background-color: blue;
+  border-radius: 5px;
+  height: 50px;
+  width: 120px;
+  padding: 17px 12px;
+}
+
+
+.selectCard {
+  width: 250px;
+  border: none;
+  text-align: center;
+  height: 25px;
+  border-radius: 5px;
+}
+
