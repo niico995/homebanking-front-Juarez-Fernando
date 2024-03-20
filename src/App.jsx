@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeaderFooter from './layouts/HeadFoot'
 import NewAcc from './pages/NewAcc'
 import NewCard from './pages/NewCard'
+import SignIn from './pages/SignIn'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/loans' element={<Loans />} />
           <Route path='/newAcc' element={<NewAcc />} />
           <Route path='/newCard' element={<NewCard />} />
+          <Route path='/signIn' element={<SignIn/>} />
         </Routes>
       </HeaderFooter>
     </BrowserRouter>
