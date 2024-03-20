@@ -12,7 +12,7 @@ import SignIn from './pages/SignIn'
 function App() {
   return (
     <BrowserRouter>
-      <HeaderFooter>
+      
         <Routes>
           <Route path='/home' element={<Home />} />
           <Route path='/cards' element={<Cards />} />
@@ -20,8 +20,9 @@ function App() {
           <Route path='/newAcc' element={<NewAcc />} />
           <Route path='/newCard' element={<NewCard />} />
           <Route path='/signIn' element={<SignIn/>} />
+          {/* <Route path='/' element={}/> */}
         </Routes>
-      </HeaderFooter>
+      
     </BrowserRouter>
   );
 }

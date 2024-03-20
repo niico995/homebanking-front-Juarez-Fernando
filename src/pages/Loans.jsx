@@ -7,12 +7,12 @@ import LoansData from "../components/Loans";
 const Loans = () => {
   return (
     
-      
+    <HeaderFooter>
         <div className="mainContainer">
             <Hello></Hello>
             <LoansData></LoansData>
         </div>
-      
+      </HeaderFooter>
     
   );
 };

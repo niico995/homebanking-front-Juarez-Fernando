@@ -1,6 +1,6 @@
 import React from "react";
 import Anchor from "../components/Anchor";
-
+import HeaderFooter from "../layouts/HeadFoot";
 
 const NewCard = () => {
 
@@ -19,7 +19,7 @@ const NewCard = () => {
   */
 
     return (
-        <>
+        <> <HeaderFooter>
             <div className="newCardContainer">
                 <h3>Apply for a Card</h3>
                 <div className="newCardForm">
@@ -39,6 +39,7 @@ const NewCard = () => {
                     </div>
                 </div>
             </div>
+            </HeaderFooter>
         </>
     )
 }

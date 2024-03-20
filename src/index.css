@@ -297,3 +297,49 @@ nav {
   border-radius: 5px;
 }
 
+/*  SignIn  */
+
+.singHello {
+  position: relative;
+  top: 140px;
+  left: 12%;
+  font-size: 28px;
+}
+.containerSignIn {
+  background-color: rgb(25, 42, 197);
+  width: 350px;
+  height: 220px;
+  position: relative;
+  left: 8%;
+  top: 250px;
+  border-radius: 15px;
+}
+.formIn, .formIn div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  font-size: 14px;
+}
+
+.formIn div:first-child {
+  margin-top: 15px;
+}
+
+.formIn div input {
+  text-align: center;
+  color: black;
+  font-size: 14px;
+}
+
+.formIn button {
+  width: 120px;
+  height: 35px;
+  border-radius: 15px;
+  background-color: rgb(13, 230, 110);
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+}

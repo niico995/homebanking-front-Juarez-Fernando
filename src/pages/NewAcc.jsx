@@ -1,6 +1,6 @@
 import React from "react";
 import Anchor from "../components/Anchor";
-
+import HeaderFooter from "../layouts/HeadFoot";
 const NewAcc = () => {
 
      /* 
@@ -18,7 +18,9 @@ const NewAcc = () => {
   */
 
     return (
+
         <>
+        <HeaderFooter>
             <div className="reqAcc">
                 <h3>Request Account</h3>
                 <div className="newAccContainer">
@@ -32,6 +34,7 @@ const NewAcc = () => {
                     </div>
                 </div>
             </div>
+            </HeaderFooter>
         </>
     )
 

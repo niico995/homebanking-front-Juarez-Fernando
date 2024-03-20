@@ -9,7 +9,7 @@ import Anchor from "../components/Anchor";
 const Home = () => {
   return (
     
-      
+    <HeaderFooter>
         <div className="mainContainer">
             <Hello></Hello>
             <CreditCards></CreditCards>
@@ -17,7 +17,7 @@ const Home = () => {
                 <Anchor to="/newCard" content="New Card"></Anchor>
             </div>
         </div>
-      
+      </HeaderFooter>
   );
 };
 export default Home;
