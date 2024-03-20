@@ -23,7 +23,7 @@ const CreditCards = () => {
         <>
             <div className="cards">
             {cards.map(card => (
-                <div key={card.id} className="cardContainer2">
+                <div key={card.id} className={`cardContainer2 ${card.cardColor}` }>
                     <div className="cardTop">
                         <img className="headerIcon chip" src={chip} alt="chip imgage"/>
                         <div className="type">
