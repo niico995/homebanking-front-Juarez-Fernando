@@ -9,10 +9,11 @@ const CreditCards = () => {
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:8080/api/clients/2")
+        axios.get("http://localhost:8080/api/clients/current")
             .then(response => {
                 const clientData = response.data;
                 setCards(clientData.cards);
+                console.log(clientData.cards)
             })
             .catch(error => {
                 console.error("There was a problem with the request:", error);

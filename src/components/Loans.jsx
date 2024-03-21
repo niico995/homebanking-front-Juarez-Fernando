@@ -46,7 +46,7 @@ const LoansData = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/clients/2")
+      .get("http://localhost:8080/api/clients/current")
       .then((response) => {
         const clientData = response.data;
         setDataInfo(clientData.accounts);
@@ -59,7 +59,7 @@ const LoansData = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/clients/2")
+      .get("http://localhost:8080/api/clients/current")
       .then((response) => {
         const clientData = response.data;
         setDataLoans(clientData.loans);

@@ -5,7 +5,7 @@ const Card = () => {
     const [accounts, setAccounts] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:8080/api/clients/2")
+        axios.get("http://localhost:8080/api/clients/current")
             .then(response => {
                 const clientData = response.data;
                 setAccounts(clientData.accounts);
