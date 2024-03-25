@@ -1,12 +1,14 @@
-import React, { useState } from "react";
-import {Link } from 'react-router-dom'
+import {React , useState } from "react";
+//import {Link } from 'react-router-dom'
 import axios  from "axios";
 import { useDispatch } from "react-redux";
 //import {actions} from '../redux/actions/auth.actions'
 import {current, login} from '../redux/actions/auth.actions'
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
-
+import sign from "../assets/sign.jpg"
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
 
 const SignIn = () => {
     const [userData, setUserData] = useState({email: '', password: ''})
@@ -38,6 +40,7 @@ const SignIn = () => {
 
         .catch((err) => {console.log(err);
           console.log("Failed to log in.");
+          toast.error(err);
         })
     }
 
@@ -75,10 +78,16 @@ const SignIn = () => {
                 required
               />
             </div>
-            <button type="submit">Sign In</button>
+            <button className="botonEnviar" type="submit">Sign In</button>
           </form>
+          
         </div>
+        <div>
+            <button className="signUpbtn"><a href="/signUp">Sign Up</a></button>
+          </div>
+        <img className="loginBanner" src={sign} alt="bannerlogin" />
         <Footer />
+        <ToastContainer/>
       </>
     );
   };

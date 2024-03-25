@@ -6,9 +6,9 @@ const HeaderFooter = (props) => {
 
     return (
     <>
-        <Header></Header>
+        <Header/>
             {props.children}
-        <Footer></Footer>
+        <Footer/>
     </>
     )
 }

@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { NavLink ,Link } from "react-router-dom";
 
 const Anchor = (props) => {
     return (
-        <Link className="anchor" to={props.to}>{props.content}</Link>
+        <NavLink className="anchor inactive" activeClassName="active"  exact={true} to={props.to}>{props.content}</NavLink>
     );
 }
 

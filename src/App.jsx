@@ -1,13 +1,15 @@
-import { useState } from 'react'
+//import { useState } from 'react'
 import './App.css'
 import Home from './pages/Home'
 import Cards from './pages/Cards'
 import Loans from './pages/Loans'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HeaderFooter from './layouts/HeadFoot'
+//import HeaderFooter from './layouts/HeadFoot'
 import NewAcc from './pages/NewAcc'
 import NewCard from './pages/NewCard'
 import SignIn from './pages/SignIn'
+import Transactions from './pages/Transactions'
+import SignUp from './pages/SignUp'
 
 function App() {
   return (
@@ -19,8 +21,10 @@ function App() {
           <Route path='/loans' element={<Loans />} />
           <Route path='/newAcc' element={<NewAcc />} />
           <Route path='/newCard' element={<NewCard />} />
-          <Route path='/signIn' element={<SignIn/>} />
-          {/* <Route path='/' element={}/> */}
+          <Route path='/'  element={<SignIn/>} />
+          <Route path='/signin'  element={<SignIn/>} />
+          <Route path='/signUp' element={<SignUp/>} />
+          <Route path='/transactions' element={<Transactions/>}/> 
         </Routes>
       
     </BrowserRouter>

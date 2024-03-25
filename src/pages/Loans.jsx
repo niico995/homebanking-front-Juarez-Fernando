@@ -3,6 +3,7 @@ import React from "react";
 import HeaderFooter from "../layouts/HeadFoot";
 import Hello from "../components/WellcomeBanner";
 import LoansData from "../components/Loans";
+import {  ToastContainer } from "react-toastify";
 
 const Loans = () => {
   return (
@@ -12,6 +13,7 @@ const Loans = () => {
             <Hello></Hello>
             <LoansData></LoansData>
         </div>
+        <ToastContainer/>
       </HeaderFooter>
     
   );

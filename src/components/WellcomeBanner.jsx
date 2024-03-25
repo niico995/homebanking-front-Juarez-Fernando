@@ -51,7 +51,7 @@ const Hello = () => {
 
     return (
         <>    
-            {/* <p className="welcome">Welcome, {user.user.name}!</p> */}
+            { <p className="welcome">Welcome, {store.name}!</p> }
             <img className="banner" src={BannerImg} alt="banner" />
         </>    
     );
